@@ -1,14 +1,14 @@
 package Algorithm01_배열;
 
 /**
- * 출처 : 코딩 테스트 완전 정복 - 문제 04 모의고사
+ * 출처 : 프로그래머스 - 43840, 모의고사
  * 일시 : 24.06.11(화)
  * 풀이 시간 : 15분
  */
 
 import java.util.*;
 
-public class 코테완정_문제04 {
+public class 모의고사 {
     public static void main(String[] args) {
         // input data
         int[][] arrays = {

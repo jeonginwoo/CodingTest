@@ -8,7 +8,7 @@ package Algorithm01_배열;
 
 import java.util.*;
 
-public class 코테완정_문제01 {
+public class 배열_정렬하기 {
     public static void main(String[] args) {
         // input data
         int[][] arrays = {
