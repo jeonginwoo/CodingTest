@@ -11,7 +11,9 @@ import java.util.*;
 public class 요세푸스_문제 {
     public static void main(String[] args) {
         // input data
-        int[][] arrays = {{5, 2}};
+        int[][] arrays = {
+                {5, 2}
+        };
 
         // output data
         for (int i = 0; i < arrays.length; i++) {

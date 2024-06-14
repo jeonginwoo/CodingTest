@@ -1,4 +1,4 @@
-package Algorithm03_큐;
+package Algorithm04_해시;
 
 /**
  * 출처 : 프로그래머스 - 131127, 할인 행사
@@ -40,6 +40,8 @@ public class 할인_행사 {
                 for (int j = 0; j < want.length; j++) {
                     if (map.getOrDefault(want[j], 0) >= number[j]) {
                         count++;
+                    } else {
+                        break;
                     }
                 }
                 if (count == want.length) {
