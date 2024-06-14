@@ -12,7 +12,7 @@ public class 트리_순회 {
     public static void main(String[] args) {
         // input data
         int[][] arrays = {
-                {1, 2, 3, 4, 6, 7}
+                {1, 2, 3, 4, 5, 6, 7}
         };
 
         // output data
