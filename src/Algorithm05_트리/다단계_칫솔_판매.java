@@ -1,7 +1,7 @@
 package Algorithm05_트리;
 
 /**
- * 출처 : 코딩 테스트 완전 정복 - 문제 27 다단계_칫솔_판매
+ * 출처 : 프로그래머스 - 77468, 다단계_칫솔_판매
  * 일시 : 24.06.14(금)
  * 풀이 시간 : 35분
  */
@@ -41,17 +41,14 @@ public class 다단계_칫솔_판매 {
             idx.put(enroll[i], i);
         }
         for (int i = 0; i < seller.length; i++) {
-            calculate(referral, result, idx, seller[i], amount[i] * 100);
+            String s = seller[i];
+            int a = amount[i] * 100;
+            while (a > 0 && !s.equals("-")) {
+                result[idx.get(s)] += a - a / 10;
+                s = referral[idx.get(s)];
+                a /= 10;
+            }
         }
         return result;
-    }
-
-    public static void calculate(String[] referral, int[] result, Map<String, Integer> idx, String seller, int amount) {
-        if (seller.equals("-")) {
-            return;
-        }
-        result[idx.get(seller)] += amount - amount / 10;
-        String nextSeller = referral[idx.get(seller)];
-        calculate(referral, result, idx, nextSeller, amount / 10);
     }
 }

@@ -22,16 +22,16 @@ public class 모의고사 {
         }
     }
 
-    private static int[] solution(int[] answer) {
+    private static int[] solution(int[] answers) {
         int[][] arrays = {
                 {1, 2, 3, 4, 5},
                 {2, 1, 2, 3, 2, 4, 2, 5},
                 {3, 3, 1, 1, 2, 2, 4, 4, 5, 5}
         };
         int[] point = {0, 0, 0};
-        for (int i = 0; i < answer.length; i++) {
+        for (int i = 0; i < answers.length; i++) {
             for (int j = 0; j < arrays.length; j++) {
-                if (answer[i] == arrays[j][i % arrays[j].length]) {
+                if (answers[i] == arrays[j][i % arrays[j].length]) {
                     point[j]++;
                 }
             }
